@@ -90,6 +90,9 @@ $(document).ready(function() {
         }
 
 
+        delimita();
+
+
     });
 
     //Tamanho furo
@@ -120,6 +123,8 @@ $(document).ready(function() {
 
             $('.furo').attr('r', limite2);
         }
+
+        delimita();
 
     });
 
@@ -175,6 +180,16 @@ $(document).ready(function() {
     });
 
 
+    $('#tamanho-aro-2').on('mouseup', function () {
+
+        var tamanhoAro2 = $('.tamanho-aro-2 .value').text();
+
+        console.log(tamanhoAro2);
+        $('.circulo-2').attr('r', tamanhoAro2);
+
+    });
+
+
 
     function reduzFuro() {
         if($('.circulo-2').attr('r') != 0) {
@@ -200,5 +215,19 @@ $(document).ready(function() {
 
         return limite2;
     }
+    function delimita() {
+        var limite1 = $('.limite').attr('value');
+        var limite2 = $('.limite-2').attr('value');
 
+        $('.delimitador').attr('value', limite1 - limite2);
+        alteraRange()
+    }
+    function alteraRange() {
+
+       $('#tamanho-aro-2').attr({
+           'min': parseInt(limite2) + 10,
+           'max': limite - 10
+       })
+
+    }
 });
