@@ -1,0 +1,92 @@
+.criaBotao {
+
+    .div-formulario {
+        box-shadow: 0px 0px 20px 0px #888;
+        padding: 20px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .div-botoes {
+        border: 1px solid #fff;
+        padding: 20px;
+        background: #efefef;
+        width: 45% !important;
+        margin-right: 40px;
+    }
+
+    svg {
+        transition: 0.3s all;
+
+        circle {
+            transition: 0.1s all;
+        }
+    }
+
+    > .container {
+        margin-top: 50px;
+    }
+
+    .botao {
+        text-align: center;
+    }
+
+    form {
+        .escolha-aros {
+            .qtd-aros {
+                display: inline-block;
+                margin-right: 20px;
+
+                label {
+                    padding-bottom: 40px;
+                    font-size: 20px;
+                    padding-top: 2px;
+                    padding-left: 35px !important;
+
+                    &:before, &:after {
+                        width: 20px !important;
+                        height: 20px !important;
+                    }
+                }
+            }
+        }
+        .cor-bolacha {
+            position: relative;
+            clear: both;
+            > div {
+
+                position: relative;
+                width: 36px;
+                height: 36px;
+
+                > div {
+                    background: url(../img/select.png);
+                    position: absolute;
+                    top: 3px;
+                    left: 3px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+        }
+        #tamanho-bolacha {
+            height: 65px;
+        }
+        #tamanho-furo {
+            height: 65px;
+        }
+        .cores {
+            .aros {
+                padding: 15px 0;
+                display: none;
+            }
+
+            .aro-1 {
+                display: block;
+            }
+        }
+    }
+}
