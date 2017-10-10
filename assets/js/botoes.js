@@ -143,7 +143,7 @@ $(document).ready(function() {
         if($(this).attr('value') == 2) {
 
             $('.circulo-1').attr('r', limite);
-            $('.circulo-2').attr('r', limite - 10);
+            $('.circulo-2').attr('r', parseInt(limite2)  + 10);
             $('.circulo-3').attr('r', '00');
             $('.circulo-4').attr('r', '00');
         }
@@ -151,10 +151,10 @@ $(document).ready(function() {
         if($(this).attr('value') == 3) {
 
             $('.circulo-1').attr('r', limite);
-            $('.circulo-2').attr('r', limite - 10);
+            $('.circulo-2').attr('r', parseInt(limite2) + 10);
 
 
-            $('.circulo-3').attr('r', limite - 20);
+            $('.circulo-3').attr('r', parseInt(limite2) + 10);
 
             $('.circulo-4').attr('r', '00');
         }
@@ -162,14 +162,9 @@ $(document).ready(function() {
         if($(this).attr('value') == 4) {
 
             $('.circulo-1').attr('r', limite);
-
-            $('.circulo-2').attr('r', limite - 10);
-
-
-            $('.circulo-3').attr('r', limite - 20);
-
-
-            $('.circulo-4').attr('r', limite - 30);
+            $('.circulo-2').attr('r', parseInt(limite2)  + 10);
+            $('.circulo-3').attr('r', parseInt(limite2)  + 20);
+            $('.circulo-4').attr('r', parseInt(limite2)  + 30);
 
         }
 
@@ -185,7 +180,18 @@ $(document).ready(function() {
         var tamanhoAro2 = $('.tamanho-aro-2 .value').text();
 
         console.log(tamanhoAro2);
-        $('.circulo-2').attr('r', tamanhoAro2);
+        tamanho2 = parseInt(tamanhoAro2) + parseInt(limite2);
+        console.log(tamanho2);
+
+        if( tamanho2 > limite) {
+
+            $('.circulo-2').attr('r', ((parseInt(tamanhoAro2) + parseInt(limite2)) - parseInt(limite2)));
+
+        } else {
+
+            $('.circulo-2').attr('r', (parseInt(tamanhoAro2) + parseInt(limite2)));
+        }
+
 
     });
 
@@ -225,8 +231,8 @@ $(document).ready(function() {
     function alteraRange() {
 
        $('#tamanho-aro-2').attr({
-           'min': parseInt(limite2) + 10,
-           'max': limite - 10
+           'min': 1,
+           'max':  $('.delimitador').attr('value')
        })
 
     }
