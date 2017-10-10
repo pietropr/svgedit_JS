@@ -154,7 +154,7 @@ $(document).ready(function() {
             $('.circulo-2').attr('r', parseInt(limite2) + 10);
 
 
-            $('.circulo-3').attr('r', parseInt(limite2) + 10);
+            $('.circulo-3').attr('r', parseInt(limite2) + 20);
 
             $('.circulo-4').attr('r', '00');
         }
@@ -174,7 +174,7 @@ $(document).ready(function() {
 
     });
 
-
+    //ARO 1
     $('#tamanho-aro-2').on('mouseup', function () {
 
         var tamanhoAro2 = $('.tamanho-aro-2 .value').text();
@@ -190,6 +190,44 @@ $(document).ready(function() {
         } else {
 
             $('.circulo-2').attr('r', (parseInt(tamanhoAro2) + parseInt(limite2)));
+        }
+
+
+    });
+
+    //ARO 2
+    $('#tamanho-aro-3').on('mouseup', function () {
+
+        var tamanhoAro3 = $('.tamanho-aro-3 .value').text();
+
+        tamanho3 = parseInt(tamanhoAro3) + parseInt(limite2);
+
+        if( tamanho3 > limite) {
+
+            $('.circulo-3').attr('r', ((parseInt(tamanhoAro3) + parseInt(limite2)) - parseInt(limite2)));
+
+        } else {
+
+            $('.circulo-3').attr('r', (parseInt(tamanhoAro3) + parseInt(limite2)));
+        }
+
+
+    });
+
+
+    $('#tamanho-aro-4').on('mouseup', function () {
+
+        var tamanhoAro4 = $('.tamanho-aro-4 .value').text();
+
+        tamanho4 = parseInt(tamanhoAro4) + parseInt(limite2);
+
+        if( tamanho4 > limite) {
+
+            $('.circulo-4').attr('r', ((parseInt(tamanhoAro4) + parseInt(limite2)) - parseInt(limite2)));
+
+        } else {
+
+            $('.circulo-4').attr('r', (parseInt(tamanhoAro4) + parseInt(limite2)));
         }
 
 
@@ -233,7 +271,28 @@ $(document).ready(function() {
        $('#tamanho-aro-2').attr({
            'min': 1,
            'max':  $('.delimitador').attr('value')
-       })
+       });
 
+        $('#tamanho-aro-3').attr({
+            'min': 1,
+            'max':  $('.delimitador').attr('value')
+        });
+
+        $('#tamanho-aro-4').attr({
+            'min': 1,
+            'max':  $('.delimitador').attr('value')
+        });
     }
+    function menu_size() {
+        if ($(document).scrollTop() > 50) {
+            $("body").addClass("small");
+        } else {
+            $("body").removeClass("small");
+        }
+    }
+
+    $(window).scroll(function () {
+        menu_size();
+
+    });
 });
