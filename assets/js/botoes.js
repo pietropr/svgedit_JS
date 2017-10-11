@@ -1,14 +1,27 @@
 $(document).ready(function() {
 
-    $('.circulo-1').attr('r', '78');
-    $('.limite').attr('value', '78');
+    var select   = $('select');
+    var circulo1 = $('.circulo-1');
+    var circulo2 = $('.circulo-2');
+    var circulo3 = $('.circulo-3');
+    var circulo4 = $('.circulo-4');
+    var limite_1 = $('.limite');
+    var limite_2 = $('.limite-2');
+    var furo     = $('.furo');
+    var body = $('body');
 
-    $('.furo').attr('r', '24.2');
-    $('.limite-2').attr('value', '24.2');
 
 
-    limite = $('.limite').attr('value');
-    limite2 = $('.limite-2').attr('value');
+    circulo1.attr('r', '78');
+    limite_1.attr('value', '78');
+
+
+    furo.attr('r', '24.2');
+    limite_2.attr('value', '24.2');
+
+
+    var limite = limite_1.attr('value');
+    var limite2 = limite_2.attr('value');
 
 
     $('.escolha-aros input').click(function() {
@@ -44,11 +57,11 @@ $(document).ready(function() {
 
 
     //hibilita sleect materialize
-    $('select').material_select();
+    select.material_select();
 
 
     //escolha de cores selects
-    $('select').on('change', function() {
+    select.on('change', function() {
         var id = $(this).attr('id');
         var cor = $('option:selected',this);
         var corFim = $(cor).attr('class');
@@ -108,17 +121,13 @@ $(document).ready(function() {
 
         reduzFuro();
 
-        if($('.circulo-4').attr('r') != '00') {
-            diferente = parseInt($('.circulo-4').attr('r')) - limite2;
-
-            console.log(diferente);
-
-
+        if(circulo4.attr('r') !== '00') {
+            var diferente = parseInt($('.circulo-4').attr('r')) - limite2;
 
             if(diferente <= 9) {
                 $('.furo').attr('r', limite2 - diferente );
                 $('.limite-2').attr('value', 25.2);
-                limite2 = $('.limite-2').attr('value');
+                limite2 = limite_2.attr('value');
             }
 
             $('.furo').attr('r', limite2);
@@ -178,10 +187,7 @@ $(document).ready(function() {
     $('#tamanho-aro-2').on('mouseup', function () {
 
         var tamanhoAro2 = $('.tamanho-aro-2 .value').text();
-
-        console.log(tamanhoAro2);
-        tamanho2 = parseInt(tamanhoAro2) + parseInt(limite2);
-        console.log(tamanho2);
+        var tamanho2 = parseInt(tamanhoAro2) + parseInt(limite2);
 
         if( tamanho2 > limite) {
 
@@ -199,8 +205,7 @@ $(document).ready(function() {
     $('#tamanho-aro-3').on('mouseup', function () {
 
         var tamanhoAro3 = $('.tamanho-aro-3 .value').text();
-
-        tamanho3 = parseInt(tamanhoAro3) + parseInt(limite2);
+        var tamanho3 = parseInt(tamanhoAro3) + parseInt(limite2);
 
         if( tamanho3 > limite) {
 
@@ -219,12 +224,11 @@ $(document).ready(function() {
     $('#tamanho-aro-4').on('mouseup', function () {
 
         var tamanhoAro4 = $('.tamanho-aro-4 .value').text();
-
-        tamanho4 = parseInt(tamanhoAro4) + parseInt(limite2);
+        var tamanho4 = parseInt(tamanhoAro4) + parseInt(limite2);
 
         if( tamanho4 > limite) {
 
-            $('.circulo-4').attr('r', ((parseInt(tamanhoAro3) + parseInt($('.circulo-3').attr('r')) - parseInt(limite2))));
+            $('.circulo-4').attr('r', ((parseInt(tamanhoAro4) + parseInt($('.circulo-3').attr('r')) - parseInt(limite2))));
 
         } else {
 
@@ -286,36 +290,31 @@ $(document).ready(function() {
     }
     function menu_size() {
         if ($(document).scrollTop() > 50) {
-            $("body").addClass("small");
+            body.addClass("small");
         } else {
-            $("body").removeClass("small");
+            body.removeClass("small");
         }
     }
 
     $(window).scroll(function () {
 
         var header = $('.spy2');
-        var mainPosition = $('body').position();
+        var mainPosition = body.position();
 
         header.css('top', $(document).scrollTop() + mainPosition.top + 'px');
 
         menu_size();
 
-        posBotao = $('.spy2').css('top');
-
-        posForm = $('.resto-formulario').position().top;
+        //pega posicao do spy
+        var posBotao = header.css('top');
+        var posForm = $('.resto-formulario').position().top;
 
         if(parseInt(posForm) - parseInt(posBotao) <= 270  ) {
-            $('body').addClass('travar');
+            body.addClass('travar');
 
         } else {
-            $('body').removeClass('travar');
+            body.removeClass('travar');
         }
-
-
-
-
-
 
 
 
