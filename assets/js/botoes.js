@@ -2,13 +2,12 @@ $(document).ready(function() {
 
     var select   = $('select');
     var circulo1 = $('.circulo-1');
-    var circulo2 = $('.circulo-2');
-    var circulo3 = $('.circulo-3');
     var circulo4 = $('.circulo-4');
     var limite_1 = $('.limite');
     var limite_2 = $('.limite-2');
+    var delimitador = $('.delimitador');
     var furo     = $('.furo');
-    var body = $('body');
+    var body     = $('body');
 
 
 
@@ -22,6 +21,9 @@ $(document).ready(function() {
 
     var limite = limite_1.attr('value');
     var limite2 = limite_2.attr('value');
+    delimitador.attr('value', limite - limite2);
+
+    alteraRange();
 
 
     $('.escolha-aros input').click(function() {

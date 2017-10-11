@@ -6,6 +6,9 @@
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/assets/js/criptografado.min.min.js" />
+      <root url="file://$PROJECT_DIR$/assets/js/criptografado.min.min.js" />
+      <root url="file://$PROJECT_DIR$/assets/js/criptografado.min.js" />
       <root url="file://$PROJECT_DIR$/assets/js/botoes.min.js" />
     </CLASSES>
     <SOURCES />
