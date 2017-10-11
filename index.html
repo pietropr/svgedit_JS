@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-    <script async src="assets/js/botoes.js"></script>
+    <script async src="assets/js/botoes.min.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
     <script src="assets/colorpicker/colorpicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.min.css">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/colorpicker/css/colorpicker.css">
 </head>
 <body class="criaBotao">
+<div class="spy"></div>
     <div class="container">
     <div class="row">
         <div class="limite"></div>
@@ -51,6 +52,7 @@
                     <circle class="circulo furo" cx="90" cy="90" r="00"/>
                 </svg>
             </div>
+            <div class="spy2"></div>
         </div>
         <div class="col m6 div-formulario">
             <div class="form">
@@ -72,6 +74,10 @@
                             <option class="#800080" value="Roxo">Roxo</option>
                             <option class="#bbb" value="Cinza">Cinza</option>
                             <option class="#A52A2A" value="Marrom">Marrom</option>
+                            <option class="#c29b37" value="Dourado">Dourado</option>
+                            <option class="#0d076b" value="Azul Marinho">Azul Marinho</option>
+                            <option class="#612436" value="Vinho">Vinho</option>
+                            <option class="#57B952" value="Verde Abacate">Verde Abacate</option>
                         </select>
     
                     </div>
@@ -113,6 +119,10 @@
                                 <option class="#800080" value="Roxo">Roxo</option>
                                 <option class="#bbb" value="Cinza">Cinza</option>
                                 <option class="#A52A2A" value="Marrom">Marrom</option>
+                                <option class="#c29b37" value="Dourado">Dourado</option>
+                                <option class="#0d076b" value="Azul Marinho">Azul Marinho</option>
+                                <option class="#612436" value="Vinho">Vinho</option>
+                                <option class="#57B952" value="Verde Abacate">Verde Abacate</option>
                             </select>
                             <h6>Escolha o tamanho do aro 1</h6>
                             <div class="tamanho-aro-2 col m12 range-field">
@@ -133,6 +143,10 @@
                                 <option class="#800080" value="Roxo">Roxo</option>
                                 <option class="#bbb" value="Cinza">Cinza</option>
                                 <option class="#A52A2A" value="Marrom">Marrom</option>
+                                <option class="#c29b37" value="Dourado">Dourado</option>
+                                <option class="#0d076b" value="Azul Marinho">Azul Marinho</option>
+                                <option class="#612436" value="Vinho">Vinho</option>
+                                <option class="#57B952" value="Verde Abacate">Verde Abacate</option>
                             </select>
                             <h6>Escolha o tamanho do aro 2</h6>
                             <div class="tamanho-aro-3 col m12 range-field">
@@ -152,6 +166,10 @@
                                 <option class="#800080" value="Roxo">Roxo</option>
                                 <option class="#bbb" value="Cinza">Cinza</option>
                                 <option class="#A52A2A" value="Marrom">Marrom</option>
+                                <option class="#c29b37" value="Dourado">Dourado</option>
+                                <option class="#0d076b" value="Azul Marinho">Azul Marinho</option>
+                                <option class="#612436" value="Vinho">Vinho</option>
+                                <option class="#57B952" value="Verde Abacate">Verde Abacate</option>
                             </select>
                             <h6>Escolha o tamanho do aro 3</h6>
                             <div class="tamanho-aro-4 col m12 range-field">
@@ -161,6 +179,37 @@
                     </div>
                     
                 </form>
+            </div>
+        </div>
+        <div class="col m6 resto-formulario">
+            <h5>Complete o restante do formulário para enviar o orçamento</h5>
+            <div class="input-field col s12">
+                <input id="espessura" type="text" class="validate" name="espessura">
+                <label for="espessura">Espessura da peça (altura da borda do botão)</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="btn-ataque" type="text" class="validate" name="btn-ataque">
+                <label for="btn-ataque">Qtde. de botões de ataque:</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="btn-defesa" type="text" class="validate" name="btn-defesa">
+                <label for="btn-defesa">Qtde. de botões de defesa:</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="diametro-btn-defesa" type="text" class="validate" name="diametro-btn-defesa">
+                <label for="diametro-btn-defesa">Diâmetro Botão defesa</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="diametro-btn-ataque" type="text" class="validate" name="diametro-btn-ataque">
+                <label for="diametro-btn-ataque">Diâmetro Botão ataque</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="grau-bainha" type="text" class="validate" name="grau-bainha">
+                <label for="grau-bainha">Grau inclinação bainha</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="grau-face" type="text" class="validate" name="grau-face">
+                <label for="grau-face">Grau inclinação face</label>
             </div>
         </div>
     </div>

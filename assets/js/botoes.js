@@ -204,12 +204,13 @@ $(document).ready(function() {
 
         if( tamanho3 > limite) {
 
-            $('.circulo-3').attr('r', ((parseInt(tamanhoAro3) + parseInt(limite2)) - parseInt(limite2)));
+            $('.circulo-3').attr('r', ((parseInt(tamanhoAro3) + parseInt($('.circulo-2').attr('r')) - parseInt(limite2))));
 
         } else {
 
-            $('.circulo-3').attr('r', (parseInt(tamanhoAro3) + parseInt(limite2)));
+            $('.circulo-3').attr('r', (parseInt(tamanhoAro3) + parseInt($('.circulo-2').attr('r'))));
         }
+
 
 
     });
@@ -223,11 +224,11 @@ $(document).ready(function() {
 
         if( tamanho4 > limite) {
 
-            $('.circulo-4').attr('r', ((parseInt(tamanhoAro4) + parseInt(limite2)) - parseInt(limite2)));
+            $('.circulo-4').attr('r', ((parseInt(tamanhoAro3) + parseInt($('.circulo-3').attr('r')) - parseInt(limite2))));
 
         } else {
 
-            $('.circulo-4').attr('r', (parseInt(tamanhoAro4) + parseInt(limite2)));
+            $('.circulo-4').attr('r', (parseInt(tamanhoAro4) + parseInt($('.circulo-3').attr('r'))));
         }
 
 
@@ -292,7 +293,31 @@ $(document).ready(function() {
     }
 
     $(window).scroll(function () {
+
+        var header = $('.spy2');
+        var mainPosition = $('body').position();
+
+        header.css('top', $(document).scrollTop() + mainPosition.top + 'px');
+
         menu_size();
+
+        posBotao = $('.spy2').css('top');
+
+        posForm = $('.resto-formulario').position().top;
+
+        if(parseInt(posForm) - parseInt(posBotao) <= 270  ) {
+            $('body').addClass('travar');
+
+        } else {
+            $('body').removeClass('travar');
+        }
+
+
+
+
+
+
+
 
     });
 });
