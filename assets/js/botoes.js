@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    console.log('ok');
+
     var select   = $('select');
     var circulo1 = $('.circulo-1');
     var circulo4 = $('.circulo-4');
@@ -317,8 +319,5 @@ $(document).ready(function() {
         } else {
             body.removeClass('travar');
         }
-
-
-
     });
 });
