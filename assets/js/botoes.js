@@ -301,6 +301,16 @@ $(document).ready(function() {
             body.removeClass("small");
         }
     }
+    function botao_topo() {
+
+        var botaoTopo = $('.voltar-topo');
+
+        if ($(document).scrollTop() > 300) {
+            botaoTopo.css('opacity', 1);
+        } else {
+            botaoTopo.css('opacity', 0);
+        }
+    }
 
     $(window).scroll(function () {
         var distancia = $(document).scrollTop();
@@ -313,6 +323,7 @@ $(document).ready(function() {
         header.css('top', $(document).scrollTop() + mainPosition.top + 'px');
 
         menu_size();
+        botao_topo();
 
 
         //pega posicao do spy

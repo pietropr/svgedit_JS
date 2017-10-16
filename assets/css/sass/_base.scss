@@ -1,5 +1,40 @@
 .criaBotao {
 
+    .voltar-topo {
+        opacity: 0;
+        transition: all .3s;
+        right: 30px;
+        position: fixed;
+        background: #ccc;
+        padding: 10px 10px;
+        bottom: 30px;
+        border-radius: 50% !important;
+
+        a {
+            color: white;
+            span {
+                vertical-align: middle;
+                font-size: 45px;
+            }
+        }
+
+        &:hover {
+            transition: all .3s;
+            background: #888;
+        }
+
+    }
+
+    .btn-pietro {
+        background: #000;
+        color: #fff;
+        border-radius: 0 !important;
+        border: 0;
+        width: 100%;
+        padding: 20px 30px;
+        display: block !important;
+    }
+
     &.small {
 
         .div-botoes {
