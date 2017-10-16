@@ -3,7 +3,7 @@
   transition: all .3s;
   right: 30px;
   position: fixed;
-  background: #ccc;
+  background: #999;
   padding: 10px 10px;
   bottom: 30px;
   border-radius: 50% !important; }
@@ -14,7 +14,7 @@
       font-size: 45px; }
   .criaBotao .voltar-topo:hover {
     transition: all .3s;
-    background: #888; }
+    background: #222; }
 .criaBotao .btn-pietro {
   background: #000;
   color: #fff;

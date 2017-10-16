@@ -1,9 +1,7 @@
 $(document).ready(function() {
 
-
-
     console.log('ok');
-
+    var botaoTopo = $('.voltar-topo');
     var select   = $('select');
     var circulo1 = $('.circulo-1');
     var circulo4 = $('.circulo-4');
@@ -12,6 +10,18 @@ $(document).ready(function() {
     var delimitador = $('.delimitador');
     var furo     = $('.furo');
     var body     = $('body');
+
+
+    $('.voltar-topo a').on('click', function (e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+            targetOffset = $(id).offset().top;
+        $('html, body').animate({
+            scrollTop: targetOffset - 50
+        }, 700);
+
+    });
+
 
 
 
@@ -303,7 +313,7 @@ $(document).ready(function() {
     }
     function botao_topo() {
 
-        var botaoTopo = $('.voltar-topo');
+
 
         if ($(document).scrollTop() > 300) {
             botaoTopo.css('opacity', 1);
@@ -313,10 +323,7 @@ $(document).ready(function() {
     }
 
     $(window).scroll(function () {
-        var distancia = $(document).scrollTop();
         var posForm  = $('.resto-formulario').position().top;
-        console.log(distancia);
-
         var header = $('.spy2');
         var mainPosition = body.position();
 
