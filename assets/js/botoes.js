@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
     console.log('ok');
 
     var select   = $('select');
@@ -301,6 +303,9 @@ $(document).ready(function() {
     }
 
     $(window).scroll(function () {
+        var distancia = $(document).scrollTop();
+        var posForm  = $('.resto-formulario').position().top;
+        console.log(distancia);
 
         var header = $('.spy2');
         var mainPosition = body.position();
@@ -309,9 +314,10 @@ $(document).ready(function() {
 
         menu_size();
 
+
         //pega posicao do spy
         var posBotao = header.css('top');
-        var posForm = $('.resto-formulario').position().top;
+
 
         if(parseInt(posForm) - parseInt(posBotao) <= 270  ) {
             body.addClass('travar');
