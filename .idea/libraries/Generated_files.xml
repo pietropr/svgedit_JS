@@ -2,14 +2,74 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/public_html/assets/js/hestia-elementor-notice.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/js/customizer-controls.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/bootstrap/js/npm.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/js/customizer.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/js/jquery.matchHeight.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/js/sectionsMatchHeight.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/js/material.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/js/hestia-pagebuilder.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/js/scripts.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-alpha-color-picker/js/alpha-color-picker.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-multiple-checkbox/js/script.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-font-selector/js/select.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-select-multiple/js/script-hestia-select-multiple.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-sections-order/js/customizer-sections-order.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-font-selector/js/typography.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-range-value/js/customizer-range-value-control.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-page-editor/js/hestia-update-controls.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-page-editor/js/hestia-text-editor.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-info/js/customizer-info-controls.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-repeater/js/customizer_repeater.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/plugin-install/js/hestia-plugin-install.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-info/js/customizer-info.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-repeater/js/fontawesome-iconpicker.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/typography/js/customizer.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/inc/customizer-theme-info/js/hestia-theme-info-customize-controls.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/bootstrap/js/bootstrap.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/js/pietro.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/ti-customizer-notify/js/ti-customizer-notify-customizer.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/ti-about-page/js/ti_about_page_scripts.min.js" />
         <item url="file://$PROJECT_DIR$/assets/js/botoes.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/assets/bootstrap/js/bootstrap.min.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/assets/js/criptografado.min.min.js" />
       <root url="file://$PROJECT_DIR$/assets/js/criptografado.min.min.js" />
       <root url="file://$PROJECT_DIR$/assets/js/criptografado.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/js/hestia-elementor-notice.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/js/customizer-controls.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/bootstrap/js/npm.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/js/customizer.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/js/jquery.matchHeight.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/js/sectionsMatchHeight.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/js/material.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/js/hestia-pagebuilder.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/js/scripts.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-alpha-color-picker/js/alpha-color-picker.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-multiple-checkbox/js/script.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-font-selector/js/select.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-select-multiple/js/script-hestia-select-multiple.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-sections-order/js/customizer-sections-order.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-font-selector/js/typography.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-range-value/js/customizer-range-value-control.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-page-editor/js/hestia-update-controls.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-page-editor/js/hestia-text-editor.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-info/js/customizer-info-controls.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-repeater/js/customizer_repeater.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/plugin-install/js/hestia-plugin-install.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-info/js/customizer-info.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-repeater/js/fontawesome-iconpicker.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/typography/js/customizer.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/inc/customizer-theme-info/js/hestia-theme-info-customize-controls.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/bootstrap/js/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/js/pietro.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/ti-customizer-notify/js/ti-customizer-notify-customizer.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/ti-about-page/js/ti_about_page_scripts.min.js" />
       <root url="file://$PROJECT_DIR$/assets/js/botoes.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/assets/bootstrap/js/bootstrap.min.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

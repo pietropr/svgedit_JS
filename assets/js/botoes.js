@@ -330,8 +330,7 @@ $(document).ready(function() {
         header.css('top', $(document).scrollTop() + mainPosition.top + 'px');
 
         menu_size();
-        botao_topo();
-
+        botao_topo()
 
         //pega posicao do spy
         var posBotao = header.css('top');
